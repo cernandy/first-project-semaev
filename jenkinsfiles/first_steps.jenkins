@@ -20,7 +20,7 @@ pipeline {
                 sh 'ssh root@test-server-1 \'mkdir andy\''
             }
         }
-         stage("Second step") {
+         stage("Third step") {
             steps {
                 sh 'ssh root@test-server-1 \'date\''
             }
