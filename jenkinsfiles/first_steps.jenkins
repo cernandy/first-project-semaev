@@ -19,6 +19,10 @@ pipeline {
                 sh 'ssh root@test-server-1 \'uptime\''
                 sh 'ssh root@test-server-1 \'mkdir andy\''
             }
+         stage("Second step") {
+            steps {
+                sh 'date'
+            }
         }
     }
 }
