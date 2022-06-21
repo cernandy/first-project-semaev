@@ -21,7 +21,7 @@ pipeline {
             }
          stage("Second step") {
             steps {
-                sh 'date'
+                sh 'ssh root@test-server-1 \'date\''
             }
         }
     }
